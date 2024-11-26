@@ -7,7 +7,7 @@ This project is an implementation of a quantum random number generator using the
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/Kairos-T/QRNG
+https://github.com/LovKumar3/QRNG.git
 cd QRNG
 ```
 
@@ -15,7 +15,8 @@ cd QRNG
 
 ```bash
 sudo python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate// for linux/Mac
+venv\Scripts\activate   // for windows
 ```
 
 3. Install the dependencies:
@@ -35,12 +36,12 @@ python3 app.py
 ## Features
 
 - Entering a specified range
-- Generating a single random number
-- Generating 100 random numbers
+- Generate a single quantum random number or a batch of 100 numbers.
+- Compare results with classical random numbers generated using NumPy.
 - Clearing the generated numbers
 - Visualising the distribution of the generated numbers using a bar chart
 - <details> 
-    <summary>Removing outliers from the distribution to improve accuracy of the distribution representation</summary>
+    <summary> Removing outliers from the distribution to improve accuracy of the distribution representation</summary>
 
   - This application uses the Z-score method to remove outliers. Outliers here are defined as numbers that are more than 3 standard deviations away from the mean.
   - Mathematically, the Z-score of a data point \(x\) in a dataset is calculated using the formula:
@@ -60,7 +61,7 @@ python3 app.py
 ## Usage
 
 1. Enter the minimum and maximum values.
-2. Click on the "Generate" button to generate a single random number, or the "Generate 100 Numbers" button to generate 100 random numbers.
+2. Click on the "Generate" button to generate a single quantum random number, or the "Generate 100 Numbers" button to produce 100 quantum random numbers and their classical counterparts.
 3. Click on the "Generate Graph" button to visualise the distribution of the generated numbers. Optionally, click on the "Remove Outliers" button to remove outliers from the distribution.
 4. Click on the "Clear" button to clear the generated numbers and the graph.
 
